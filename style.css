@@ -1,0 +1,184 @@
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Styles */
+#header {
+  background-color: #333;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+#header a {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+#header .icons {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+#header .icons li {
+  display: inline;
+  margin: 0 15px;
+}
+
+#header .icons a {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+/* About Me Section */
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10%;
+  background-color: white;
+  margin: 20px 0;
+}
+
+.about-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about-text header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.about-text header p {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-me .image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-me .image img {
+  max-width: 80%; /* Make the image smaller */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Favourite Books Section */
+h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+article ol {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin: 0 auto;
+  width: 80%;
+}
+
+article ol li {
+  margin-bottom: 10px;
+}
+
+/* Top Tech Companies Section */
+h3 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* link styling */
+a {
+  color: inherit; /* Inherit color from parent element */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  color: #007bff; /* Blue color when hovered */
+  text-decoration: underline;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-me {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+
+  table {
+    font-size: 1em;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  #header .icons li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section header h1 {
+    font-size: 1.8em;
+  }
+
+  section header p {
+    font-size: 1em;
+  }
+
+  article ol {
+    font-size: 1em;
+  }
+
+  table {
+    font-size: 0.9em;
+  }
+}
