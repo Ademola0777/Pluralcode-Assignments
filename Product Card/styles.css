@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+  background-color: #e9e9e7;
+  color: black;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Card Container */
+.card {
+  display: flex;
+  flex-direction: row; 
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 550px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Section */
+.image {
+  flex: 1.3;
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Content Section */
+.content {
+  padding: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Category Text */
+.category {
+  font-size: 13px;
+  color: gray;
+  letter-spacing: 5px;
+}
+
+/* Title */
+h1 {
+  font-size: 26px;
+}
+
+/* Description */
+.description {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Price Section */
+.price {
+  display: flex;
+  align-items: center;
+}
+
+/* New Price */
+.New_price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #3a7944;
+}
+
+/* Old Price */
+.old_price {
+  font-size: 14px;
+  color: gray;
+  text-decoration: line-through;
+  margin-left: 10px;
+  position: relative;
+  top: -5px;
+}
+
+/* Button */
+button {
+  background-color: #3a7944;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #2e5f36;
+}
+
+/* Responsive Styles */
+@media (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .image {
+    flex: 1;
+    height: 250px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .New_price {
+    font-size: 22px;
+  }
+
+  .old_price {
+    font-size: 12px;
+    top: -3px;
+  }
+}

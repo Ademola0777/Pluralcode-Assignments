@@ -1,0 +1,58 @@
+General
+body {
+  background-color: black;
+  color: white;
+  font-family: arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+}
+
+/* Profile Picture Styles*/
+.profile_img {
+  width: 40%;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+/* Card Styles */
+.card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0 0.5);
+}
+
+/* Location Styles */
+.Location {
+  color: #a8ff78;
+  font-weight: bold;
+  margin-bottom: 5px 0;
+}
+
+/* bio Styles */
+.bio {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* buttons styles */
+.btn {
+  display: block;
+  background-color: #333;
+  color: azure;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.btn:hover {
+  color: #a8ff78;
+  background-color: #555;
+  transition: 0.3s;
+}
